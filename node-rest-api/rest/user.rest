@@ -1,0 +1,35 @@
+### update user
+PUT http://localhost:8800/api/users/62441dca56bf38ab3116fd4e
+Content-Type: application/json
+
+{
+    "userId" :"62441dca56bf38ab3116fd4e",
+    "desc": "Hello friends! This is John"
+}
+
+### delete user
+DELETE http://localhost:8800/api/users/6241d1df4c9038ab32138ca4
+Content-Type: application/json
+
+{
+    "userId": "6241d1df4c9038ab32138ca4"
+}
+
+### get user
+GET http://localhost:8800/api/users/62441f9dfe72f46224c24abb
+
+### follow user
+PUT http://localhost:8800/api/users/6241d5df9ffa7e33c2c1f8f1/follow
+Content-Type: application/json
+
+{
+    "userId": "62441dca56bf38ab3116fd4e"
+}
+
+### unfollow user
+PUT http://localhost:8800/api/users/6241d5df9ffa7e33c2c1f8f1/unfollow
+Content-Type: application/json
+
+{
+    "userId": "62441f9dfe72f46224c24abb"
+}

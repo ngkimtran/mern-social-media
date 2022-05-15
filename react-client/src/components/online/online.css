@@ -1,0 +1,32 @@
+.rightbar-friend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.rightbar-profile-img-container {
+  margin-right: 0.675rem;
+  position: relative;
+}
+
+.rightbar-profile-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.rightbar-active-status {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  top: -0.125rem;
+  right: 0;
+  border: 0.125rem solid white;
+}
+
+.rightbar-username {
+  font-weight: 500;
+}

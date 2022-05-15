@@ -1,0 +1,45 @@
+### create post
+POST http://localhost:8800/api/posts/create
+Content-Type: application/json
+
+{
+    "userId": "62441dca56bf38ab3116fd4e",
+    "desc": "post from john"
+}
+
+### update post
+PUT http://localhost:8800/api/posts/6244323668b77baceb857003
+Content-Type: application/json
+
+{
+    "userId": "62441dca56bf38ab3116fd4e",
+    "desc": "my first time cooking",
+    "img":"post/2.jpeg"
+}
+
+### delete post
+DELETE http://localhost:8800/api/posts/624431b05df1e6cac469097c
+Content-Type: application/json
+
+{
+    "userId": "62441dca56bf38ab3116fd4e"
+}
+
+### like/unlike post
+PUT http://localhost:8800/api/posts/6244323668b77baceb857003/like
+Content-Type: application/json
+
+{
+    "userId": "62441dca56bf38ab3116fd4e"
+}
+
+### get post
+GET http://localhost:8800/api/posts/6244313d95caa0276c84d00a
+
+### get timeline post
+GET http://localhost:8800/api/posts/timeline/all
+Content-Type: application/json
+
+{
+    "userId": "62441dca56bf38ab3116fd4e"
+}
